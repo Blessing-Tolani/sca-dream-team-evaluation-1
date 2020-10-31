@@ -1,15 +1,12 @@
-# Task
 
-Create a catalogue of 10 items and each item should have
-a button that lets you set an item as available or 
-unavailable.
+# Solution
 
-There should be visual representation showing an items availablity.
-**ie we should be able to see what's available in the UI**. You 
-could do this by toggling a class on the item.
+Item = Bag
+I created objects for each item and its property.
+I put the objects in a catalogue array.
 
-# Deliverables
-
-- A github repo showing your completed code
-- Your site hosted somewhere on the internet eg. vercel, netlify, firebase
-- This readme file updated with the approach you took and an explanation on your decisions
+I used a For loop that iterates 10 times to render each item and its property to the HTML DOM
+A button was included in each Item.
+When the button is clicked, A function is called that sets the Item Availability.
+Click once after page is loaded means Item is not available
+Click again means Item is available

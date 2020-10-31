@@ -1,3 +1,4 @@
+//Items
 let catalogue = [
     {
     sku: "/Bags/01.jpg",
@@ -60,6 +61,8 @@ let catalogue = [
     availability:true
     },
 ]
+
+//For loop that renders the item
 for (let i = 0; i < 11; i++){
     let div = document.createElement('div');
     let sum = `${i}`;
@@ -71,6 +74,8 @@ for (let i = 0; i < 11; i++){
     document.getElementById(sum).innerHTML += `<h4> ${catalogue[i].name}</h4> <h4>${catalogue[i].price}</h4> <h4 class = "avail">Available</h4> <button onclick = "setAvailability(this)" >Toggle</button>`
 
 }
+
+//Function that sets Item Availability
 function setAvailability(elem){
     let id = elem.parentNode;
     let ans = id.children[3].innerHTML;
@@ -78,10 +83,12 @@ function setAvailability(elem){
         id.children[1].classList.toggle("erase");
         id.children[2].classList.toggle("erase");
         id.children[3].innerHTML = "Not Available";
+        id.children[3].style.color = "#494c4a";
     }
     else{
         id.children[1].classList.toggle("erase");
         id.children[2].classList.toggle("erase");
         id.children[3].innerHTML = "Available";
+        id.children[3].style.color = "black";
     }
 }

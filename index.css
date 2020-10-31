@@ -20,7 +20,7 @@ button {
 }
 
 .erase {
-  text-decoration: line-through;
+  color:#494c4a;
 }
 
 @media screen and (max-width: 500px) {
