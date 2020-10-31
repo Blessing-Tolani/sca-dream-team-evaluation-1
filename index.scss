@@ -2,11 +2,13 @@ div div{
     display:inline-block;
     text-align: center;
     width:30%;
+
     margin:1.66%;
     font-family: 'ABeeZee', sans-serif;
 }
 img{
     width:60%;
+    height:50%;
 }
 button{
    background-color: #800020;
@@ -17,7 +19,7 @@ button{
     color:white;
 }
 .erase{
-    text-decoration: line-through;
+    color:#494c4a;
 }
 @media screen and (max-width:500px){
     div div{

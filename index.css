@@ -8,6 +8,7 @@ div div {
 
 img {
   width: 60%;
+  height: 50%;
 }
 
 button {
@@ -20,7 +21,7 @@ button {
 }
 
 .erase {
-  color:#494c4a;
+  color: #494c4a;
 }
 
 @media screen and (max-width: 500px) {
